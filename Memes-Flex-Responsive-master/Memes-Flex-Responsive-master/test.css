@@ -1,0 +1,160 @@
+
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+
+body {
+    font-family: 'Open Sans';
+}
+h1 {
+    text-align: center;
+    color: black;
+      font-family: 'Open Sans';
+      margin: 50px;
+      
+}
+body {
+    margin: 0;
+}
+.nav-bar {
+    max-width: 100%;
+}
+
+.container {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.logo {
+    width: 120px;
+    margin-left: -10%;
+
+    animation-name: logo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+    
+}
+
+.nav-bar ul{ 
+    text-align: center;
+    list-style-type: none;
+    margin-right: -10%;
+    
+}
+
+.nav-bar li {
+    color: rgb(255, 255, 255);
+    display: inline;
+    margin-left: 30px;
+    
+}
+
+#menu-icone {
+    background: url(img/menu.ico);
+    display: none;
+    width: 32px;
+    height: 32px;
+}
+.flex1 a {
+    margin: 20px;
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(0, 0, 0)34, 46, 46);
+      font-family: 'Open Sans';
+      
+}
+
+
+@media only screen and (max-width: 640px) {
+    #menu-icone {
+        display: inline-block;
+        width: 45px;
+        margin-right: 0px;
+    }
+.nav-bar ul, .nav-bar:active ul {
+    display: none;
+    position: absolute;
+    margin-right: 40px;
+    
+    padding: 20px;
+    right: 10px;
+    top: 65px;
+    width: 35%;
+    background-color: rgb(0, 0, 0);
+}
+.nav-bar:hover ul {
+    display: block;
+}
+.nav-bar li {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0;
+}
+}
+
+.container ul li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+.flex1 {
+    
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.groupe {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.groupe img {
+    border: solid black;
+    box-shadow: 0px 0px 30px 0px rgb(175, 175, 175);
+}
+
+/*.groupe img {
+    display: none;
+}*/
+
+@keyframes logo {
+    0% {-webkit-transform: scaleX(1);
+        transform: scaleX(1);}
+    50% {
+        -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); }
+  100% {-webkit-transform: scaleX(1);
+    transform: scaleX(1);
+
+  }
+}
+
+.flex1 img:hover {
+  transform: scale(1.1);
+}
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img {
+    width: 120px;
+    animation-name: logo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+    
+}
